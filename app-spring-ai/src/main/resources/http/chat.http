@@ -1,0 +1,24 @@
+### Generate a response
+GET {{baseUrl}}/ai/generate
+Accept: application/json
+
+### Generate a response stream
+GET {{baseUrl}}/ai/generateStream
+Accept: application/json
+
+### Google Example
+POST {{googleUrl}}
+X-goog-api-key: {{googleApiKey}}
+Content-Type: application/json
+
+{
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "Explain how AI works in a few words"
+          }
+        ]
+      }
+    ]
+  }
