@@ -13,3 +13,10 @@ spring:
           options:
             model: ${GOOGLE_CHAT_MODEL}
             temperature: 0.5
+        embedding:
+          api-key: ${GOOGLE_API_KEY}
+
+    vectorstore:
+      weaviate:
+        host: localhost:8080
+        scheme: http

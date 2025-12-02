@@ -6,6 +6,15 @@ Accept: application/json
 GET {{baseUrl}}/ai/generateStream
 Accept: application/json
 
+### RAG Ask
+POST {{baseUrl}}/rag/ask
+Content-Type: application/json
+
+{
+  "question": "List all price types, value and description"
+}
+
+
 ### Google Example
 POST {{googleUrl}}
 X-goog-api-key: {{googleApiKey}}

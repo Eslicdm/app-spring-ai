@@ -20,6 +20,8 @@ src/main/resources/http/http-client.private.env.json
 *.iws
 *.iml
 *.ipr
+.idea/httpClient
+.idea/dbnavigator.xml
 
 ### NetBeans ###
 /nbproject/private/

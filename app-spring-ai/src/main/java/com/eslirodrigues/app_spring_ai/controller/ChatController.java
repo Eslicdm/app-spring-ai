@@ -28,7 +28,7 @@ public class ChatController {
     @GetMapping("/ai/generateStream")
     public Flux<String> generateStream() {
         return  chatClient.prompt()
-                .user("Tell me a car name")
+                .user("Tell me one car name")
                 .stream()
                 .content();
     }
